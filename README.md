@@ -2,6 +2,8 @@
 
 This project aims to create a dataset of handwritten Cree syllabics.
 
+To contribute a handwriting sample, [please follow the instructions here](https://samclarke.net/cree/).
+
 
 ## Handwriting Samples
 
