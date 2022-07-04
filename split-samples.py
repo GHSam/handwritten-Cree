@@ -25,6 +25,10 @@ def split_sample(path: Path, destination: Path):
         # <symbol> <left> <bottom> <right> <top> <page>
         symbol, left, bottom, right, top, page = line.split(" ")
 
+        if not symbol:
+            print("Warn: Missing symbol on line {}".format(i))
+            continue
+
         x = int(left)
         y = height - int(top)
         h = (height - int(bottom)) - y
