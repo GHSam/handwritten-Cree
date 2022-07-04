@@ -26,8 +26,8 @@ def split_sample(path: Path, destination: Path):
         symbol, left, bottom, right, top, page = line.split(" ")
 
         x = int(left)
-        y = int(height) - int(top)
-        h = (int(height) - int(bottom)) - y
+        y = height - int(top)
+        h = (height - int(bottom)) - y
         w = int(right) - x
 
         symbol_path = destination.joinpath("{}_{}.png".format(i, symbol))
