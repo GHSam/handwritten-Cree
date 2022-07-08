@@ -28,6 +28,20 @@ The box file format is the same format used by Tesseract. Each line contains the
 **Note:** The coordinates are from the bottom left corner, not the top left corner.
 
 
+## Utilities
+
+### Sample Spliter
+
+The `split-samples.py` file is a command-line utility to split the samples into individual syllabic images. It requires the `opencv-python` to be installed.
+
+To run it, from the repositories root directory run:
+```
+python split-samples.py
+```
+
+It should then create a directory called `split-samples` with subdirectories for each sample containing images of the individual syllabics.
+
+
 ## License
 
 This work is licensed under a
